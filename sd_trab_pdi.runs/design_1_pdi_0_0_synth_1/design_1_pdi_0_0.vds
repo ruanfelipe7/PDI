@@ -1,0 +1,564 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jun 24 00:05:50 2019
+# Process ID: 4902
+# Current directory: /home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.runs/design_1_pdi_0_0_synth_1
+# Command line: vivado -log design_1_pdi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_pdi_0_0.tcl
+# Log file: /home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.runs/design_1_pdi_0_0_synth_1/design_1_pdi_0_0.vds
+# Journal file: /home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.runs/design_1_pdi_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_pdi_0_0.tcl -notrace
+Command: synth_design -top design_1_pdi_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4938 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1256.332 ; gain = 81.996 ; free physical = 698 ; free virtual = 1686
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_pdi_0_0' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/bd/design_1/ip/design_1_pdi_0_0/synth/design_1_pdi_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'pdi' declared at '/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/pdi.vhd:36' bound to instance 'U0' of component 'pdi' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/bd/design_1/ip/design_1_pdi_0_0/synth/design_1_pdi_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'pdi' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/pdi.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/control_unit.vhd:53]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'controller' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:54]
+	Parameter N bound to: 16 - type: integer 
+WARNING: [Synth 8-614] signal 'start' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'opcode' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'pixel_addr' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'data_in' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_done' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_mem_addr' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'acumulador' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'endereco_ram' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_rand' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_count_rand' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'brilho' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_done_baixa_brilho' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_done_aumenta_brilho' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'endereco_rom' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'end_ram_suav' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'habilita_ram' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_grand_red' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_grand_green' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 's_grand_blue' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-614] signal 'fim_suav' is read in the process but is not in the sensitivity list [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'controller' (1#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/my_lib/delay.vhd:49]
+	Parameter bits bound to: 15 - type: integer 
+	Parameter delay bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay' (2#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/my_lib/delay.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (3#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/control_unit.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/datapath.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'oper_binarizacao' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_binarizacao.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'adder' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/adder.vhd:42]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/adder.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'comp_lt' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/comp_lt.vhd:41]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'comp_lt' (5#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/comp_lt.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'oper_binarizacao' (6#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_binarizacao.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'oper_tonsdecinza' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_tonsdecinza.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'multiplicador' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/multiplicador.vhd:42]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplicador' (7#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/multiplicador.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'shift_direita' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/shift_direita.vhd:42]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_direita' (8#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/imports/new/shift_direita.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'oper_tonsdecinza' (9#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_tonsdecinza.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'oper_negativo' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_negativo.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'oper_negativo' (10#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_negativo.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'oper_redimensionar' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_redimensionar.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'oper_redimensionar' (11#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_redimensionar.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'oper_rotacao' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_rotacao.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'oper_rotacao' (12#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_rotacao.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'oper_sal_e_pimenta' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_sal_e_pimenta.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'oper_sal_e_pimenta' (13#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_sal_e_pimenta.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'oper_suavizacao' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_suavizacao.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'oper_suavizacao' (14#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_suavizacao.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'oper_ajustedebrilho' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_ajustedebrilho.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'oper_ajustedebrilho' (15#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_ajustedebrilho.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'oper_rgb' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_rgb.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'oper_rgb' (16#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/oper_rgb.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (17#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/datapath.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'pdi' (18#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/pdi.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_pdi_0_0' (19#1) [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/bd/design_1/ip/design_1_pdi_0_0/synth/design_1_pdi_0_0.vhd:70]
+WARNING: [Synth 8-3331] design oper_sal_e_pimenta has unconnected port sel_sal_pimenta[1]
+WARNING: [Synth 8-3331] design oper_sal_e_pimenta has unconnected port sel_sal_pimenta[0]
+WARNING: [Synth 8-3331] design datapath has unconnected port clk
+WARNING: [Synth 8-3331] design datapath has unconnected port rst
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1298.863 ; gain = 124.527 ; free physical = 704 ; free virtual = 1695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1298.863 ; gain = 124.527 ; free physical = 704 ; free virtual = 1695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1306.867 ; gain = 132.531 ; free physical = 704 ; free virtual = 1695
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:835]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:835]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:835]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:835]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:835]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:835]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:127]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_grand_red_reg' and it is trimmed from '19' to '8' bits. [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:689]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_grand_green_reg' and it is trimmed from '19' to '8' bits. [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:690]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_grand_blue_reg' and it is trimmed from '19' to '8' bits. [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:691]
+WARNING: [Synth 8-6014] Unused sequential element s_count_clocks_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:652]
+WARNING: [Synth 8-6014] Unused sequential element s_count_rand_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:653]
+WARNING: [Synth 8-6014] Unused sequential element s_countx_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:685]
+WARNING: [Synth 8-6014] Unused sequential element s_county_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:687]
+WARNING: [Synth 8-6014] Unused sequential element s_acumulador_red_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:689]
+WARNING: [Synth 8-6014] Unused sequential element s_acumulador_green_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element s_acumulador_blue_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:691]
+WARNING: [Synth 8-6014] Unused sequential element pixel_addr_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:769]
+WARNING: [Synth 8-6014] Unused sequential element contador_de_pulsos_brilho_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:792]
+WARNING: [Synth 8-6014] Unused sequential element brilho_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:799]
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'ram_we_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:129]
+WARNING: [Synth 8-327] inferring latch for variable 'out_op_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:195]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_addr_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:201]
+WARNING: [Synth 8-327] inferring latch for variable 's_mem_addr_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'control_brilho_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:587]
+WARNING: [Synth 8-327] inferring latch for variable 'sel_mux_rgb_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:307]
+WARNING: [Synth 8-327] inferring latch for variable 'sel_mux_sal_pimenta_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:136]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:202]
+WARNING: [Synth 8-327] inferring latch for variable 'op_rot_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:137]
+WARNING: [Synth 8-327] inferring latch for variable 's_loop_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 's_exec_start_suav_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:132]
+WARNING: [Synth 8-327] inferring latch for variable 's_exec_start_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:130]
+WARNING: [Synth 8-327] inferring latch for variable 's_init_count_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:133]
+WARNING: [Synth 8-327] inferring latch for variable 's_brilho_op_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:586]
+WARNING: [Synth 8-327] inferring latch for variable 's_init_brilho_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:134]
+WARNING: [Synth 8-327] inferring latch for variable 's_rand_reg' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:556]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1330.891 ; gain = 156.555 ; free physical = 676 ; free virtual = 1669
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 9     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 7     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   6 Input     24 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input     15 Bit        Muxes := 1     
+	   7 Input     15 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 15    
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 4     
+	  30 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	  30 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 13    
+	  30 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 9     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   6 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input     15 Bit        Muxes := 1     
+	   7 Input     15 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 15    
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 4     
+	  30 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	  30 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 13    
+	  30 Input      1 Bit        Muxes := 12    
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+Module oper_binarizacao 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module oper_tonsdecinza 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+Module oper_rgb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'controlador/s_county_reg[3:0]' into 'controlador/s_county_reg[3:0]' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:687]
+INFO: [Synth 8-4471] merging register 'controlador/s_acumulador_blue_reg[15:0]' into 'controlador/s_acumulador_blue_reg[15:0]' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:691]
+INFO: [Synth 8-4471] merging register 'controlador/s_acumulador_green_reg[15:0]' into 'controlador/s_acumulador_green_reg[15:0]' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:690]
+INFO: [Synth 8-4471] merging register 'controlador/s_acumulador_red_reg[15:0]' into 'controlador/s_acumulador_red_reg[15:0]' [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:689]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_county_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:687]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_acumulador_blue_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:691]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_acumulador_green_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_acumulador_red_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:689]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_county_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:687]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_countx_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:685]
+WARNING: [Synth 8-6014] Unused sequential element controlador/pixel_addr_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:769]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_count_clocks_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:652]
+WARNING: [Synth 8-6014] Unused sequential element controlador/contador_de_pulsos_brilho_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:792]
+WARNING: [Synth 8-6014] Unused sequential element controlador/brilho_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:799]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_acumulador_blue_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:691]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_acumulador_green_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_acumulador_red_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:689]
+WARNING: [Synth 8-6014] Unused sequential element controlador/s_count_rand_reg was removed.  [/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.srcs/sources_1/new/controller.vhd:653]
+DSP Report: Generating DSP ajustedebrilho/dout1, operation Mode is: A*B.
+DSP Report: operator ajustedebrilho/dout1 is absorbed into DSP ajustedebrilho/dout1.
+DSP Report: Generating DSP ajustedebrilho/dout1, operation Mode is: A*B.
+DSP Report: operator ajustedebrilho/dout1 is absorbed into DSP ajustedebrilho/dout1.
+DSP Report: Generating DSP ajustedebrilho/dout1, operation Mode is: A*B.
+DSP Report: operator ajustedebrilho/dout1 is absorbed into DSP ajustedebrilho/dout1.
+WARNING: [Synth 8-3331] design datapath has unconnected port clk
+WARNING: [Synth 8-3331] design datapath has unconnected port rst
+WARNING: [Synth 8-3331] design datapath has unconnected port sel_mux_sal_pimenta[1]
+WARNING: [Synth 8-3331] design datapath has unconnected port sel_mux_sal_pimenta[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\U0/control_unit1/controlador/s_count_rand_reg[0] )
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/sel_mux_sal_pimenta_reg[1]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/sel_mux_sal_pimenta_reg[0]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[31]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[30]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[29]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[28]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[27]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[26]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[25]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[24]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[23]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[22]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[21]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[20]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[19]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[18]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[17]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[16]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_rand_reg[15]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_acumulador_blue_reg[15]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_acumulador_green_reg[15]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_acumulador_red_reg[15]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[0]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[15]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[16]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[17]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[18]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[19]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[20]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[21]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[22]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[23]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[24]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[25]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[26]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[27]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[28]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[29]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[30]) is unused and will be removed from module design_1_pdi_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/control_unit1/controlador/s_count_rand_reg[31]) is unused and will be removed from module design_1_pdi_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1461.281 ; gain = 286.945 ; free physical = 496 ; free virtual = 1515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+--------------------------+---------------+----------------+
+|Module Name  | RTL Object               | Depth x Width | Implemented As | 
++-------------+--------------------------+---------------+----------------+
+|controller   | out_op                   | 32x4          | LUT            | 
+|controller   | rom_addr                 | 32x1          | LUT            | 
+|controller   | s_loop                   | 32x1          | LUT            | 
+|controller   | s_exec_start             | 32x1          | LUT            | 
+|controller   | s_init_count             | 32x1          | LUT            | 
+|control_unit | controlador/out_op       | 32x4          | LUT            | 
+|control_unit | controlador/rom_addr     | 32x1          | LUT            | 
+|control_unit | controlador/s_loop       | 32x1          | LUT            | 
+|control_unit | controlador/s_exec_start | 32x1          | LUT            | 
+|control_unit | controlador/s_init_count | 32x1          | LUT            | 
++-------------+--------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|oper_ajustedebrilho | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|oper_ajustedebrilho | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|oper_ajustedebrilho | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:52 . Memory (MB): peak = 1461.281 ; gain = 286.945 ; free physical = 497 ; free virtual = 1516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:52 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 491 ; free virtual = 1510
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   122|
+|2     |DSP48E1 |     3|
+|3     |LUT1    |    40|
+|4     |LUT2    |   205|
+|5     |LUT3    |    93|
+|6     |LUT4    |    85|
+|7     |LUT5    |    74|
+|8     |LUT6    |   145|
+|9     |MUXF7   |     4|
+|10    |MUXF8   |     1|
+|11    |FDCE    |    84|
+|12    |FDRE    |   196|
+|13    |LD      |   100|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------+------+
+|      |Instance             |Module              |Cells |
++------+---------------------+--------------------+------+
+|1     |top                  |                    |  1152|
+|2     |  U0                 |pdi                 |  1150|
+|3     |    control_unit1    |control_unit        |  1107|
+|4     |      addr_dly       |delay               |    15|
+|5     |      controlador    |controller          |  1092|
+|6     |    datapath1        |datapath            |    43|
+|7     |      ajustedebrilho |oper_ajustedebrilho |     3|
+|8     |      binarizacao    |oper_binarizacao    |    16|
+|9     |        soma2        |adder               |    16|
+|10    |      tonsdecinza    |oper_tonsdecinza    |    24|
+|11    |        mult_blue    |multiplicador       |     4|
+|12    |        mult_green   |multiplicador_0     |    12|
+|13    |        mult_red     |multiplicador_1     |     6|
++------+---------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 492 ; free virtual = 1511
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 71 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.281 ; gain = 287.945 ; free physical = 494 ; free virtual = 1513
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1462.289 ; gain = 287.945 ; free physical = 494 ; free virtual = 1513
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 230 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_pdi_0_0' is not ideal for floorplanning, since the cellview 'controller' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 100 instances were transformed.
+  LD => LDCE: 100 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1556.293 ; gain = 395.312 ; free physical = 455 ; free virtual = 1489
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.runs/design_1_pdi_0_0_synth_1/design_1_pdi_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1940.461 ; gain = 384.168 ; free physical = 120 ; free virtual = 1124
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/rf/sistemas_digitais/sd_trab_pdi_Operacoes/sd_trab_pdi.runs/design_1_pdi_0_0_synth_1/design_1_pdi_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_pdi_0_0_utilization_synth.rpt -pb design_1_pdi_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1940.461 ; gain = 0.000 ; free physical = 118 ; free virtual = 1123
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 24 00:08:00 2019...

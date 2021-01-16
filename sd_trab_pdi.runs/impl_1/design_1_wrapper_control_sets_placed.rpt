@@ -1,0 +1,93 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Mon Jun 24 00:12:03 2019
+| Host         : rf-Aspire-ES1-572 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |   102 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             123 |           51 |
+| No           | No                    | Yes                    |              23 |            9 |
+| No           | Yes                   | No                     |              55 |           19 |
+| Yes          | No                    | No                     |              56 |           17 |
+| Yes          | No                    | Yes                    |              63 |           13 |
+| Yes          | Yes                   | No                     |             106 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+|                                  Clock Signal                                 |                             Enable Signal                             |                                  Set/Reset Signal                                  | Slice Load Count | Bel Load Count |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/pdi_0/U0/control_unit1/controlador/g0_b0__1_n_0                   |                                                                       |                                                                                    |                1 |              1 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/s_exec_start_suav_reg_i_1_n_0  |                                                                       |                                                                                    |                1 |              1 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/s_init_brilho_reg_i_1_n_0      |                                                                       |                                                                                    |                1 |              1 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/g0_b0__3_n_0                   |                                                                       |                                                                                    |                1 |              1 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/op_rot_reg[1]_i_2_n_0          |                                                                       |                                                                                    |                1 |              2 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/sel_mux_rgb_reg[1]_i_2_n_0     |                                                                       |                                                                                    |                1 |              2 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                                |                                                                       |                                                                                    |                1 |              4 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/s_county[3]_i_2_n_0     | design_1_i/pdi_0/U0/control_unit1/controlador/s_county[3]_i_1_n_0                  |                1 |              4 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/s_countx[3]_i_1_n_0     | design_1_i/pdi_0/U0/control_unit1/controlador/s_grand_blue[7]_i_1_n_0              |                1 |              4 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                                | design_1_i/vga_driver_0/U0/eqOp6_in                                   | design_1_i/vga_driver_0/U0/v_cntr_reg0                                             |                3 |             12 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                                |                                                                       | design_1_i/vga_driver_0/U0/eqOp6_in                                                |                3 |             12 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/s_exec_start            | rst_IBUF                                                                           |                4 |             15 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/s_rand_reg[14]_i_1_n_0         |                                                                       |                                                                                    |                5 |             15 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/g0_b0__0_n_0                   |                                                                       |                                                                                    |                6 |             15 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/linha[15]_i_1_n_0       | rst_IBUF                                                                           |                3 |             16 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/linha_suav[15]_i_1_n_0  | rst_IBUF                                                                           |                3 |             16 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/coluna_suav[15]_i_1_n_0 | rst_IBUF                                                                           |                3 |             16 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                                |                                                                       | design_1_i/vga_driver_0/U0/vga_red_reg[4]_i_1_n_0                                  |                9 |             16 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/control_brilho_reg[15]_i_1_n_0 |                                                                       |                                                                                    |                6 |             17 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/ram_we_reg_i_2_n_0             |                                                                       |                                                                                    |                7 |             17 |
+|  clk_in_IBUF_BUFG                                                             |                                                                       |                                                                                    |                8 |             19 |
+|  clk_in_IBUF_BUFG                                                             |                                                                       | rst_IBUF                                                                           |                9 |             23 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/s_grand_blue[7]_i_1_n_0 |                                                                                    |                9 |             24 |
+|  clk_in_IBUF_BUFG                                                             |                                                                       | design_1_i/pdi_0/U0/control_unit1/controlador/contador_de_pulsos_brilho[0]_i_1_n_0 |                7 |             27 |
+|  design_1_i/pdi_0/U0/control_unit1/controlador/out_op_reg[3]_i_1_n_0          |                                                                       |                                                                                    |               12 |             28 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/brilho                  |                                                                                    |                8 |             32 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/p_2_in                  | design_1_i/pdi_0/U0/control_unit1/controlador/s_count_clocks[0]_i_1_n_0            |               11 |             41 |
+|  clk_in_IBUF_BUFG                                                             | design_1_i/pdi_0/U0/control_unit1/controlador/s_acumulador_red0       | design_1_i/pdi_0/U0/control_unit1/controlador/s_acumulador_blue[0]_i_1_n_0         |               12 |             45 |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 2      |                     2 |
+| 4      |                     3 |
+| 12     |                     2 |
+| 15     |                     3 |
+| 16+    |                    14 |
++--------+-----------------------+
+
+
